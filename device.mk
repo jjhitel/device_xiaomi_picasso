@@ -84,6 +84,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-parts.xml
 
+# Display
+PRODUCT_PACKAGES += \
+    libdisplayconfig \
+    libqdMetaData \
+    libqdMetaData.system \
+    libvulkan \
+    vendor.display.config@1.0
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
@@ -169,3 +177,10 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 # Wallpapers
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
