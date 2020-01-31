@@ -177,9 +177,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
-
 # Symlinks
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist \
