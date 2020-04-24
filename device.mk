@@ -195,6 +195,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
+# WiFi
+PRODUCT_PACKAGES += \
+    WifiOverlay
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
