@@ -24,6 +24,7 @@ import android.util.Log;
 
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.utils.RefreshRateUtils;
+import org.lineageos.settings.thermal.ThermalUtils;
 
 import vendor.xiaomi.hardware.touchfeature.V1_0.ITouchFeature;
 
@@ -50,6 +51,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         DozeUtils.checkDozeService(context);
         // Force apply our default value for doze if it is not set.
         DozeUtils.enableDoze(context, DozeUtils.isDozeEnabled(context));
+        ThermalUtils.startService(context);
     }
 
 }
