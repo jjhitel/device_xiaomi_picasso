@@ -151,8 +151,6 @@ PRODUCT_PACKAGES += \
 
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \
-    FrameworksResCommon \
-    FrameworksResTarget \
     DevicesOverlay \
     DevicesAndroidOverlay
 
@@ -185,6 +183,27 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml
+
+# Vendor Overlays
+PRODUCT_PACKAGES += \
+    AospFrameworkResOverlay \
+    CarrierConfigResCommon \
+    CellBroadcastReceiverResCommon \
+    DevicesAndroidOverlay \
+    DevicesOverlay \
+    DocumentsUIOverlay \
+    ElderlyNavigationBarOverlay \
+    FrameworksResCommon \
+    FrameworksResTarget \
+    GestureLineOverlay \
+    MccMncOverlay \
+    MiuiBluetoothOverlay \
+    MiuiFrameworkResOverlay \
+    MiuiSettingsResOverlay \
+    MiuiSystemUIResOverlay \
+    SystemUIResCommon \
+    TelecommResCommon \
+    TelephonyResCommon
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/prebuilt/modules,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/lib/modules)
 
