@@ -102,6 +102,8 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
   BOARD_KERNEL_SEPARATED_DTBO := false
+  TARGET_KERNEL_ADDITIONAL_FLAGS := \
+      DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
   TARGET_KERNEL_CONFIG := vendor/picasso_user_defconfig
   TARGET_KERNEL_CLANG_COMPILE := true
   TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
