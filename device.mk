@@ -175,6 +175,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# Signapk
+PRODUCT_HOST_PACKAGES += \
+    signapk
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
