@@ -181,10 +181,6 @@ product/framework/qcrilhook.jar
 product/framework/QtiTelephonyServicelibrary.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
-# Telephony (qti-telephony-common)
-# Smali edited: Removed `miui.os.Build` dependency in `WifiManagerCompatible.isNeeded()`
-product/framework/qti-telephony-common.jar
-
 # WiFi Display
 bin/wfdservice
 etc/init/wfdservice.rc
