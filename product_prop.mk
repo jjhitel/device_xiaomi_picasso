@@ -89,6 +89,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.audio.fluence.voicerec=true \
     persist.vendor.audio.fluence.audiorec=true
 
+# Screen Density
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.sf.lcd_density=440
+
 # Telephony
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=33,20 \
