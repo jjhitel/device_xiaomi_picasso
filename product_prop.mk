@@ -14,10 +14,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-threads=4 \
     dalvik.vm.image-dex2oat-threads=4
 
+# Audio
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.bluetooth.a2dp_offload.supported=false \
+    persist.bluetooth.a2dp_offload.disabled=true \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
+    vendor.audio.feature.a2dp_offload.enable=false \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=false \
+    persist.vendor.bt.a2dp.aac_whitelist=false
+
 # Bluetooth
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.bt.a2dp.aac_whitelist=false \
-    ro.bluetooth.library_name=libbluetooth_qti.so \
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.bluetooth.library_name=libbluetooth.so \
     vendor.bluetooth.soc=cherokee
 
 # Blur
