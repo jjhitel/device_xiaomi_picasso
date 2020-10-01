@@ -33,12 +33,6 @@
     <!-- The CPU temperature divider, if needed -->
     <integer name="config_cpuTempDivider" translatable="false">1000</integer>
 
-    <!-- Default no. of QS tile rows and columns -->
-    <integer name="config_qs_columns_portrait">4</integer>
-    <integer name="config_qs_rows_portrait">3</integer>
-    <integer name="config_qs_columns_landscape">5</integer>
-    <integer name="config_qs_rows_landscape">2</integer>
-
     <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
     <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
 
@@ -49,4 +43,13 @@
 
     <!-- Unify back gesture vibration with system wide haptics -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
+	
+    <!-- The number of columns in the QuickSettings -->
+    <integer name="quick_settings_num_columns">4</integer>
+
+    <!-- The number of rows in the QuickSettings -->
+    <integer name="quick_settings_max_rows">2</integer>
+
+    <!-- The default tiles to display in QuickSettings -->
+    <string name="quick_settings_tiles_default" translatable="false">wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,cast,hotspot,screenrecord,dark</string>
 </resources>
