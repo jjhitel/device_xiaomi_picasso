@@ -90,6 +90,24 @@ product/etc/CarrierSettings/vodafone_nl.pb|48aedcec52ed2a4ac6641428ca1b3a2f013bd
 product/etc/CarrierSettings/xfinity_us.pb|1b4744e6887943248d1a21282f1bc3b0788ee52a
 -product/priv-app/CarrierSettings/CarrierSettings.apk|5f6509438fd490f850b19e5295cc92edd19e6d4d
 
+# CNE
+etc/cne/Nexus/ATT/ATT_profiles.xml
+etc/cne/Nexus/ROW/ROW_profiles.xml
+etc/cne/Nexus/VZW/VZW_profiles.xml
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
+product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar
+product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
+product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
+product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
+product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
+product/framework/vendor.qti.hardware.factory-V1.0-java.jar
+product/framework/vendor.qti.hardware.factory-V1.1-java.jar
+
+# Display feature
+lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+lib/vendor.xiaomi.hardware.displayfeature@1.0.so
+
 # DPM
 framework/tcmclient.jar
 product/bin/dpmd
@@ -143,6 +161,12 @@ product/lib64/vendor.qti.imsrtpservice@2.1.so
 # Soundfx - from LA.UM.8.9.r1-08300-SM6xx.0
 vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib/soundfx/libvolumelistener.so:|672ad577dab5221bdd7f840d87313e3483aebde0
 vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|c25cc5e8c3622eb97d3bb4814aeb301c01d8b046
+
+# System
+lib/libqdMetaData.so
+lib/libqdMetaData.system.so
+lib64/libqdMetaData.so
+lib64/libqdMetaData.system.so
 
 # Telephony
 etc/permissions/privapp-permissions-qti.xml
