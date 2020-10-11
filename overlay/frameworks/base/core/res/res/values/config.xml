@@ -704,5 +704,9 @@
     <string-array name="config_biometric_sensors" translatable="false" >
 	<item>0:2:15</item>
     </string-array>
+    
+    <!-- SystemInfo Sys Nodes -->
+    <integer name="config_sysCPUTempMultiplier">1000</integer>
+    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
 
 </resources>
