@@ -3,15 +3,6 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-# ADB
-ifeq ($(TARGET_BUILD_VARIANT),eng)
-# /vendor/default.prop is force-setting ro.adb.secure=1
-# Get rid of that by overriding it in /product on eng builds
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.secure=0 \
-    ro.adb.secure=0
-endif
-
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
     pm.dexopt.ab-ota=speed-profile \
@@ -84,10 +75,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q7250-19133-1
-
-# Priv-app permission
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.control_privapp_permissions=log
 
 # RCS
 PRODUCT_PROPERTY_OVERRIDES += \

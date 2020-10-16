@@ -131,6 +131,8 @@ void vendor_load_properties() {
     }
     property_override("ro.build.description", "coral-user 11 RP1A.201105.002 6869500 release-keys");
 
+        property_override("ro.control_privapp_permissions", "log");
+
      // Workaround SafetyNet
     workaround_snet_properties();
 
