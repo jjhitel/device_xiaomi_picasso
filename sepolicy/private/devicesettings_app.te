@@ -13,8 +13,11 @@ allow devicesettings_app {
   mediaserver_service
 }:service_manager find;
 
-# Allow devicesettings_app to find hal_motor_hwservice
+# Allow devicesettings_app to find hal_touchfeature_xiaomi_hwservice
 allow devicesettings_app hal_motor_hwservice:hwservice_manager find;
+
+# Allow devicesettings_app to find hal_touchfeature_xiaomi_hwservice
+allow devicesettings_app hal_touchfeature_xiaomi_hwservice:hwservice_manager find;
 
 # Allow devicesettings_app read and write /data/data subdirectory
 allow devicesettings_app system_app_data_file:dir create_dir_perms;
