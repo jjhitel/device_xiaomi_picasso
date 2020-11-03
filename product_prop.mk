@@ -40,6 +40,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
 
+# Crypto
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.crypto.dm_default_key.options_format.version=2 \
+    ro.crypto.volume.filenames_mode=aes-256-cts \
+    ro.crypto.volume.metadata.method=dm-default-key \
+    ro.crypto.volume.options=::v2
+
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
