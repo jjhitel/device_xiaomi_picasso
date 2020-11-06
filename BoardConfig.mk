@@ -179,6 +179,13 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 
+# Symlinks
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /mnt/vendor/persist:/persist \
+    /vendor/bt_firmware:/bt_firmware \
+    /vendor/dsp:/dsp \
+    /vendor/firmware_mnt:/firmware
+
 # Treble
 BOARD_VNDK_VERSION := current
 
