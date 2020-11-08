@@ -27,7 +27,6 @@
         </receiver>
 
         <activity
-            android:icon="@drawable/ic_settings_device"
             android:name=".DevicePreferenceActivity"
             android:label="@string/device_settings_app_name"
             android:theme="@style/Theme.Main">
@@ -36,7 +35,7 @@
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.homepage" />
+                android:value="com.android.settings.category.ia.display" />
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/device_specific_settings_summary" />
