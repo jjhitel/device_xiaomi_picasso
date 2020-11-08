@@ -18,3 +18,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.btstack.enable.twsplussho=true \
     ro.bluetooth.library_name=libbluetooth_qti.so \
     vendor.bluetooth.soc=cherokee
+
+# Blurs
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=1 \
+    ro.sf.blurs_are_expensive=1
