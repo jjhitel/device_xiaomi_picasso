@@ -136,9 +136,6 @@ product/lib64/lib-imsvtutils.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
 
-# Power-off charging daemon
-bin/charger
-
 # QSEECOMD - from coral-user 11 RP1A.201105.002 6869500 release-keys
 -product/lib/libspl.so
 -product/lib64/libspl.so
