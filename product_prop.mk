@@ -87,6 +87,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     vendor.display.enable_optimize_refresh=1 \
     vendor.gralloc.disable_ubwc=0
 
+# Inband ringing
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.bluetooth.disableinbandringing=false
+
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q7250-19133-1
