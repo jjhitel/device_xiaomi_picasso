@@ -25,7 +25,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/picasso/picasso-vendor.mk)
 # Include PSU if synced
 $(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
 
--include $(LOCAL_PATH)/system_prop.mk
 -include $(LOCAL_PATH)/product_prop.mk
 
 PRODUCT_BUILD_SUPER_PARTITION := false
