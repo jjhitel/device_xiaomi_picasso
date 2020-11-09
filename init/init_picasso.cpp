@@ -122,14 +122,14 @@ void vendor_load_properties() {
 
     for (const auto &source : ro_props_default_source_order) {
         set_ro_build_prop(source, "fingerprint",
-                           "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
-        property_override("ro.build.fingerprint", "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
-        property_override("ro.bootimage.build.fingerprint", "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
+                           "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
+        property_override("ro.build.fingerprint", "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
+        property_override("ro.bootimage.build.fingerprint", "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
         set_ro_product_prop(source, "brand", "Redmi");
         set_ro_product_prop(source, "device", "picasso");
         set_ro_product_prop(source, "model", "Redmi K30 5G");
     }
-    property_override("ro.build.description", "coral-user 11 RP1A.201005.004 6782484 release-keys");
+    property_override("ro.build.description", "coral-user 11 RP1A.201105.002 6869500 release-keys");
 
      // Workaround SafetyNet
     workaround_snet_properties();
