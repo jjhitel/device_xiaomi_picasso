@@ -9,35 +9,7 @@ product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Camera
-lib/libcameraservice.so
 lib/vendor.qti.hardware.camera.device@1.0.so
-lib64/libCameraEffectJNI.so
-lib64/libarcsoft_deflicker.so
-lib64/libarcsoft_single_chart_calibration.so
-lib64/libarcsoft_wideselfie.so
-lib64/libcameraservice.so
-lib64/libcamera_960_mpbase.so
-lib64/libcamera_arcsoft_beautyshot.so
-lib64/libcamera_arcsoft_handgesture.so
-lib64/libcamera_beauty_mpbase.so
-lib64/libcamera_handgesture_mpbase.so
-lib64/libcamera_wideselfie_mpbase.so
-lib64/libcit_mpbase.so
-lib64/libdeflicker_jni.so
-lib64/libgallery_arcsoft_dualcam_refocus
-lib64/libgallery_arcsoft_portrait_lighting
-lib64/libgallery_arcsoft_portrait_lighting_c
-lib64/libgallery_block_sdk
-lib64/libgallery_mpbase.so
-lib64/libcom.xiaomi.camera.algojni.so
-lib64/libcom.xiaomi.camera.mianodejni.so
-lib64/libcom.xiaomi.camera.requestutil.so
-lib64/libhandengine.arcsoft.so
-lib64/libjni_arcsoft_beautyshot.so
-lib64/libjni_wideselfie.so
-lib64/librefocus.so
-lib64/librefocus_mibokeh.so
-lib64/libqvrcamera_client.qti.so
 lib64/vendor.qti.hardware.camera.device@1.0.so
 
 # CarrierConfig | from  Coral RPB2.200611.009-6625208-release-keys

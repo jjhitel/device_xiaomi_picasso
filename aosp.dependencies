@@ -5,8 +5,8 @@
     "branch": "ten"
   },
   {
-    "repository": "CryllicBuster273/android_vendor_xiaomi_miuicamera",
-    "target_path": "vendor/xiaomi/miuicamera",
+    "repository": "jjhitel/vendor_ANXCamera",
+    "target_path": "vendor/ANXCamera",
     "branch": "ten"
   }
 ]
