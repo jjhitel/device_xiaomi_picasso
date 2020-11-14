@@ -1,0 +1,7 @@
+[
+  {
+    "repository": "jjhitel/vendor_xiaomi_picasso",
+    "target_path": "vendor/xiaomi/picasso",
+    "branch": "eleven"
+  },
+]
