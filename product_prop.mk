@@ -26,10 +26,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bt.a2dp.aac_whitelist=false \
-    persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac \
-    persist.vendor.btstack.enable.splita2dp=true \
-    persist.vendor.btstack.enable.twsplus=true \
-    persist.vendor.btstack.enable.twsplussho=true \
     ro.bluetooth.library_name=libbluetooth_qti.so \
     vendor.bluetooth.soc=cherokee
 
@@ -40,15 +36,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
 
-# Data Modules
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.data.mode=concurrent \
-    ro.vendor.use_data_netmgrd=false
-
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
-    debug.egl.hw=0 \
-    debug.mdpcomp.logs=0 \
     debug.sf.disable_backpressure=1 \
     debug.sf.early_app_phase_offset_ns=500000 \
     debug.sf.early_gl_app_phase_offset_ns=15000000 \
@@ -102,20 +91,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Telephony
 PRODUCT_PRODUCT_PROPERTIES += \
-    ril.subscription.types=NV,RUIM \
-    ro.telephony.default_network=33,22 \
+    ro.telephony.default_network=33,20 \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1 \
-    persist.radio.NO_STAPA=1 \
-    persist.radio.VT_HYBRID_ENABLE=1 \
     persist.radio.VT_ENABLE=1 \
     persist.radio.volte.dan_support=true \
     persist.vendor.data.iwlan.enable=true \
-    persist.vendor.radio.enable_temp_dds=true \
-    persist.vendor.radio.force_on_dc=true \
-    persist.vendor.radio.redir_party_num=1 \
-    telephony.lteOnCdmaDevice=1 \
     persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 # Zygote
