@@ -184,10 +184,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
-# Wallpapers
-PRODUCT_PACKAGES += \
-    PixelLiveWallpaperPrebuilt
-
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl

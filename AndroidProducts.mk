@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_picasso.mk
+    $(LOCAL_DIR)/lineage_picasso.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_picasso-user \
-    aosp_picasso-userdebug \
-    aosp_picasso-eng
+    lineage_picasso-user \
+    lineage_picasso-userdebug \
+    lineage_picasso-eng
