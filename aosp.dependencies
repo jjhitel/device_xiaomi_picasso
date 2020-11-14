@@ -9,5 +9,10 @@
     "repository": "vendor_xiaomi_phoenix",
     "target_path": "vendor/xiaomi/phoenix",
     "branch": "ten"
+  },
+  {
+    "repository": "CryllicBuster273/android_vendor_xiaomi_miuicamera",
+    "target_path": "vendor/xiaomi/miuicamera",
+    "branch": "ten"
   }
 ]
