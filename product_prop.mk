@@ -117,3 +117,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.radio.redir_party_num=1 \
     telephony.lteOnCdmaDevice=1 \
     persist.sys.fflag.override.settings_network_and_internet_v2=true
+
+# Zygote
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.device_config.runtime_native.usap_pool_enabled=true
