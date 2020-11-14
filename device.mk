@@ -120,6 +120,9 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+PRODUCT_PACKAGES += \
+    NotchNoFillOverlay
+
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \
     FrameworksResCommon \
