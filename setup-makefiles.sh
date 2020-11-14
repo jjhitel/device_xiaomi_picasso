@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=phoenix
+DEVICE=picasso
 VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2020

@@ -1,13 +1,7 @@
 [
   {
-    "repository": "kernel_xiaomi_phoenix",
-    "target_path": "kernel/xiaomi/phoenix",
-    "branch": "ten"
-  },
-  {
-    "remote": "pixel-devices-blobs",
-    "repository": "vendor_xiaomi_phoenix",
-    "target_path": "vendor/xiaomi/phoenix",
+    "repository": "jjhitel/vendor_xiaomi_picasso",
+    "target_path": "vendor/xiaomi/picasso",
     "branch": "ten"
   },
   {
