@@ -29,16 +29,12 @@ TARGET_USES_64_BIT_BINDER := true
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := picasso
 TARGET_NO_BOOTLOADER := true
-
-# Bootloader
-TARGET_BOARD_PLATFORM := lito
-TARGET_BOOTLOADER_BOARD_NAME := lito
-
-# APEX
-DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -46,12 +42,17 @@ AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 AUDIO_FEATURE_ENABLED_HDMI_SPK := true
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
+AUDIO_FEATURE_ENABLED_TFA98XX_FEEDBACK := true
 USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
+
+# Bootloader
+TARGET_BOARD_PLATFORM := lito
+TARGET_BOOTLOADER_BOARD_NAME := lito
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
@@ -83,9 +84,6 @@ BOARD_HAVE_QCOM_FM := true
 # HIDL
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
-# Audio
-AUDIO_FEATURE_ENABLED_TFA98XX_FEEDBACK := true
-
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_picasso
 TARGET_RECOVERY_DEVICE_MODULES := libinit_picasso
@@ -97,7 +95,6 @@ BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_SECOND_OFFSET := 0xf00000
 BOARD_KERNEL_BASE := 0x0000
 BOARD_KERNEL_PAGESIZE := 4096
-#BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 cgroup.memory=nokmem,nosocket loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 TARGET_KERNEL_ARCH := arm64
@@ -107,6 +104,7 @@ TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
+  BOARD_KERNEL_SEPARATED_DTBO := false
   TARGET_KERNEL_CONFIG := vendor/picasso_user_defconfig
   TARGET_KERNEL_CLANG_COMPILE := true
   TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
@@ -120,9 +118,6 @@ BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE) --board ""
-
-# Platform
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno620
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
@@ -147,6 +142,9 @@ BUILD_WITHOUT_VENDOR := true
 BOARD_USES_PRODUCTIMAGE := true
 BOARD_USES_METADATA_PARTITION := true
 
+# Platform
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno620
+
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
@@ -160,6 +158,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR := $(DEVICE_PATH)/sepolicy/private
 
@@ -171,18 +172,16 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/public \
     device/qcom/sepolicy/qva/public
 
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
-
-# Telephony
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
 # Symlinks
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist \
     /vendor/bt_firmware:/bt_firmware \
     /vendor/dsp:/dsp \
     /vendor/firmware_mnt:/firmware
+
+# Telephony
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 
 # Treble
 BOARD_VNDK_VERSION := current
@@ -199,4 +198,3 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/picasso/BoardConfigVendor.mk
-
