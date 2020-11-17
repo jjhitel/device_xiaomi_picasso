@@ -20,7 +20,7 @@
         android:persistent="true">
 
         <receiver android:name=".BootCompletedReceiver">
-            <intent-filter>
+            <intent-filter android:priority="100">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -41,14 +41,8 @@
                 android:resource="@string/device_specific_settings_summary" />
         </activity>
 
-        <activity
-            android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.Main">
-        </activity>
-
         <service android:name=".doze.DozeService"
-                 android:permission="XiaomiDozeService">
+                 android:permission="DozeService">
         </service>
 
         <activity
