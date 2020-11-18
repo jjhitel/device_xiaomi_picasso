@@ -7,14 +7,17 @@
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-# Bootanimation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+EVO_BUILD_TYPE := UNOFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+WITH_GAPPS := true
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_picasso
+PRODUCT_NAME := evolution_picasso
 PRODUCT_DEVICE := picasso
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30 5G
