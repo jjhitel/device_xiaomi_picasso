@@ -104,8 +104,6 @@ static const char *snet_prop_key[] = {
         property_override(snet_prop_key[i], snet_prop_value[i]);
     }
 
-     chmod("/sys/fs/selinux/enforce", 0640);
-    chmod("/sys/fs/selinux/policy", 0440);
 }
 
 void property_override_multifp(char const buildfp[], char const systemfp[],
