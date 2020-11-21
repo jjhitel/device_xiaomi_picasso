@@ -290,7 +290,6 @@
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>/system/framework/services.jar</item>
         <item>/system/framework/oat/arm64/services.odex</item>
-        <item>/system/framework/oat/arm/services.odex</item>
         <item>/system/framework/framework.jar</item>
         <item>/system/framework/arm64/boot-framework.oat</item>
         <item>/system/framework/arm/boot-framework.oat</item>
