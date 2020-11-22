@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 # ART
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     pm.dexopt.ab-ota=speed-profile \
     dalvik.vm.dex2oat-filter=speed \
     dalvik.vm.image-dex2oat-filter=speed \
@@ -35,10 +35,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
-    persist.camera.gyro.disable=0 \
-    persist.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera \
-    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
+    camera.aux.packagelist=com.google.android.GoogleCamera,com.android.camera,org.codeaurora.snapcam \
+    persist.camera.privapp.list=org.codeaurora.snapcam \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam \
+    vendor.camera.aux.packageblacklist=com.discord \
+    vendor.camera.aux.packagelist=com.google.android.GoogleCamera,com.android.camera,org.codeaurora.snapcam
 
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -85,11 +86,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.bluetooth.disableinbandringing=false
 
 # Netflix
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.netflix.bsp_rev=Q7250-19133-1
 
 # RCS
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     persist.rcs.supported=1
 
 # Recorder
