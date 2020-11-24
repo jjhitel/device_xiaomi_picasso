@@ -55,4 +55,7 @@
 
     <!-- The default tiles to display in QuickSettings -->
     <string name="quick_settings_tiles_default" translatable="false">wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,cast,hotspot,screenrecord,dark</string>
+
+    <!-- Preferred refresh rate at keyguard, if supported by the display -->
+    <integer name="config_keyguardRefreshRate">120</integer>
 </resources>
