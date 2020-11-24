@@ -28,17 +28,18 @@
 
         <activity
             android:name=".DevicePreferenceActivity"
-            android:label="@string/device_settings_app_name"
+            android:label="@string/cutout_refresh_rate_title"
             android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.display" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/device_specific_settings_summary" />
+                android:resource="@string/cutout_refresh_rate_summary" />
         </activity>
 
         <activity

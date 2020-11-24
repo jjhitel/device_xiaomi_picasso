@@ -12,8 +12,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="device_specific_settings_title">기기 전용 설정</string>
-    <string name="device_specific_settings_summary">노치 및 재생률</string>
+    <string name="cutout_refresh_rate_title">노치 및 재생률</string>
+    <string name="cutout_refresh_rate_summary">노치 표시 방식 및 재생률을 설정합니다.</string>
     <string name="device_min_refresh_rate">화면 재생률</string>
     <string name="device_pill_style_notch">노치 검은 배경</string>
     <string name="msg_device_need_restart">시스템 UI를 다시 시작하면 반영됩니다.</string>
