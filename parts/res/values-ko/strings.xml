@@ -18,6 +18,10 @@
     <string name="device_pill_style_notch">노치 검은 배경</string>
     <string name="msg_device_need_restart">시스템 UI를 다시 시작하면 반영됩니다.</string>
 
+     <!--  DT2W    -->
+    <string name="dt2w_enable_title">두 번 두드려 깨우기</string>
+    <string name="dt2w_enable_summary">꺼진 화면을 두 번 두드려 화면을 켭니다.</string>
+
     <!-- Thermal Profiles -->
     <string name="thermal_title">열 프로필</string>
     <string name="thermal_summary">최적의 성능을 위해 앱별로 열 프로필을 지정합니다.</string>
